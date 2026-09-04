@@ -1,5 +1,12 @@
 ![BMad Method](banner-bmad-method.png)
 
+# AI-Driven Agile for Asset Management & Hedge Funds
+
+> This repository adapts the [BMad Method](https://github.com/bmad-code-org/bmad-method) for **asset management firms and hedge funds**, introducing the **Forward Deployed Engineer (FDE)** role and mapping the full delivery loop to investment-desk workflows — from investment thesis to deployed quant tool, risk dashboard, or compliance system.
+>
+> **New here?** Start with [`docs/hedge-fund/overview.md`](docs/hedge-fund/overview.md) — it explains the delivery loop, the role of the FDE, and how AI-driven agile helps where standard agile falls short in finance.
+
+---
 
 [![Version](https://img.shields.io/npm/v/bmad-method?color=blue&label=version)](https://www.npmjs.com/package/bmad-method)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
