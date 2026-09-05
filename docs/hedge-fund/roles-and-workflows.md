@@ -33,6 +33,8 @@ description: How every role in a hedge fund or asset management firm maps to the
 
 **Gate:** PRFAQ verdict from Investment Committee → blocks writing the PRD
 
+**See also:** [Approval Gates and Decision Points](../fintech/approval-gates.md)
+
 ---
 
 ### Phase 2 — Plan (PRD + Architecture + Specs)
@@ -50,6 +52,8 @@ description: How every role in a hedge fund or asset management firm maps to the
 8. **Compliance Officer reviews stories** → readiness gate before sprint tracking
 
 **Gates:** PRD validate (Risk Officer) → Architecture review → Readiness gate (Compliance)
+
+**See also:** [Risk Dashboard Development Process](../fintech/risk-dashboard-development-process.md) and [Compliance System Implementation](../fintech/compliance-system-implementation.md)
 
 ---
 
@@ -76,6 +80,8 @@ description: How every role in a hedge fund or asset management firm maps to the
 4. Loop restarts at the next epic or a course-correction
 
 **Gate:** Retrospective verdict (desk sign-off) → blocks starting the next epic
+
+**See also:** [Investment Thesis to Deployed Quant Tool](../fintech/investment-thesis-to-deployed-tool.md)
 
 ---
 

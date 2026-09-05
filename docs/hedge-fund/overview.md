@@ -1,63 +1,79 @@
 ---
 title: 'AI-Driven Agile for Asset Management & Hedge Funds'
-description: How the BMad Method maps to the delivery needs of asset management firms and hedge funds — from investment thesis to deployed system.
+description: How BMad fits fintech and asset management delivery — from investment thesis to deployed quant or operational system.
 ---
 
 # AI-Driven Agile for Asset Management & Hedge Funds
 
-## Why Standard Agile Falls Short in Finance
+## What This Guide Covers
 
-Most agile frameworks were designed for product companies. In a hedge fund or asset management firm, the constraints are different:
+BMad works well in finance when the process matches the risk of the work. This guide shows how to move from an investment thesis or desk problem to a deployed tool without losing auditability, compliance, or speed.
 
-- **The "customer" is the portfolio manager or trader**, not an external user. Their time is expensive and their tolerance for process friction is low.
-- **Decisions carry financial and regulatory weight.** A bad architecture choice in a quant model is not a tech-debt problem — it is a risk event.
-- **Speed and rigor must coexist.** The desk needs fast iteration. Risk and compliance need audit trails and reproducibility.
-- **Requirements are not written down.** Investment intent lives in a PM's head, in a Bloomberg terminal, and in a trading strategy — not in a Jira ticket.
+Use it when the work touches portfolio decisions, risk data, trade support, compliance automation, or anything that needs a clear decision trail.
 
-BMad Method solves this by making decisions explicit at the right moments, sizing the process to the work, and giving every role a clear lane.
+## Why Finance Needs a Different Delivery Loop
 
-## The Delivery Loop in a Hedge Fund Context
+- The customer is usually a portfolio manager, trader, risk analyst, or compliance lead.
+- The work often has regulatory and operational consequences.
+- The team needs fast iteration, but the final system must be reproducible and reviewable.
+- Requirements usually begin as investment intent, not as a written product brief.
 
+BMad makes those implicit decisions explicit at the right time and keeps each decision in a named artifact.
+
+## The Fintech Delivery Loop
+
+1. Shape the investment idea or desk problem with the FDE.
+2. Write the PRFAQ when the idea needs committee review.
+3. Get Investment Committee approval.
+4. Draft the PRD as the investment thesis in product form.
+5. Validate the PRD with the Risk Officer.
+6. Capture architecture decisions in a spine.
+7. Review the architecture with Engineering and Risk.
+8. Write one spec per epic.
+9. Clear the readiness and compliance gate.
+10. Build, test, validate, and deploy.
+11. Run the retrospective and get desk sign-off.
+
+```mermaid
+flowchart TD
+  A[Investment idea / desk problem] --> B[FDE shapes intent]
+  B --> C[PRFAQ]
+  C --> D[Investment Committee review]
+  D --> E[PRD]
+  E --> F[Risk Officer validation]
+  F --> G[Architecture spine]
+  G --> H[Architecture review]
+  H --> I[Specs per epic]
+  I --> J[Readiness / compliance gate]
+  J --> K[Build, validate, deploy]
+  K --> L[Retrospective]
+  L --> M[Desk sign-off]
 ```
-Investment Idea / Desk Problem
-        ↓
-  [FDE + PM] Shape & PRFAQ
-        ↓
-  Investment Committee ← approval gate
-        ↓
-  PRD (investment thesis as product requirements)
-        ↓
-  [Risk Officer] PRD Validate ← approval gate
-        ↓
-  UX + Architecture (data pipelines, model infra, UI)
-        ↓
-  [Architecture Review] ← approval gate
-        ↓
-  Spec per epic (one spec per quant model / tool / dashboard)
-        ↓
-  [Readiness Gate] ← compliance check
-        ↓
-  Build → Backtest / Validate → Deploy
-        ↓
-  [Retrospective] FDE + desk sign-off ← approval gate
-        ↓
-  Next epic or course correction
-```
 
-## What BMad Preserves for Finance
+## The Five Approval Gates
 
-| Concern | How BMad Addresses It |
-|---|---|
-| Audit trail | Every decision lives in a versioned document with a named owner. |
-| Regulatory sign-off | Five explicit approval gates with written artifacts — ready for audit. |
-| Reproducibility | Architecture spine records every cross-epic decision. No undocumented tribal knowledge. |
-| Speed | Small, clear changes go straight to Build. Planning depth scales to risk, not habit. |
-| Parallel teams | One PRD, one architecture spine, one spec per epic. Multiple engineers cannot diverge. |
-| Changing requirements | Update the PRD, propagate to specs. The change path is the same as the original. |
+| Gate | Purpose | Typical Artifact |
+| --- | --- | --- |
+| Investment Committee review | Confirms the idea is worth funding and aligns with the mandate | PRFAQ |
+| Risk Officer validation | Checks model risk, data provenance, controls, and exposure | PRD |
+| Architecture review | Confirms the design is safe to build and can support parallel work | Architecture spine |
+| Readiness / compliance gate | Confirms controls, audit trail, and operational readiness | Specs and release checklist |
+| Post-deployment retrospective | Confirms the desk can use the system and the outcome matches intent | Retrospective |
 
-## Where to Start
+## When To Start Where
 
-- **New investment tool from scratch** → Start at `bmad-forge-idea` or `bmad-prfaq`, then follow the delivery loop above.
-- **Existing system, new capability** → Start at `bmad-deep-recon` (understand what's there), then `bmad-spec` for the new epic.
-- **Desk problem with no clear shape** → Start with the FDE agent (`bmad-agent-fde`). Alex will elicit the intent and decide where in the loop to enter.
-- **Compliance or risk mandate** → Start at `bmad-prd` with the mandate as input. Validate mode gives a findings report without changing anything.
+- Use `bmad-forge-idea` when the desk problem is still vague.
+- Use `bmad-prfaq` when you need committee approval.
+- Use `bmad-prd` when the thesis is clear and needs governance.
+- Use `bmad-architecture` when the system will be built by more than one person or team.
+- Use `bmad-spec` when the work is ready to split into buildable epics.
+- Use `bmad-retrospective` when the feature is live and needs desk validation.
+
+## Related Fintech Guides
+
+- [Roles and Workflows](./roles-and-workflows.md)
+- [Forward Deployed Engineer](./fde-role.md)
+- [Investment Thesis to Deployed Tool](../fintech/investment-thesis-to-deployed-tool.md)
+- [Risk Dashboard Development Process](../fintech/risk-dashboard-development-process.md)
+- [Compliance System Implementation](../fintech/compliance-system-implementation.md)
+- [FDE Role Definition](../fintech/fde-role-definition.md)
