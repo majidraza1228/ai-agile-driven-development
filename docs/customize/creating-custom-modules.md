@@ -72,3 +72,12 @@ Keep custom modules aligned with the validator:
 3. Replace the sample instructions with your domain-specific content.
 4. Add or remove skill folders as needed.
 5. Run the skill validator against the new module before publishing it.
+
+## Use it from GitHub Copilot
+
+1. Copy `src/custom-module-template/` into your repo or module source.
+2. Open the project in GitHub Copilot and point the BMad installer at the folder.
+3. Install the module from a local path during development, or from a Git URL after publishing.
+4. Invoke the renamed skills from Copilot the same way you would any BMad skill.
+
+For Copilot coding agent or Copilot CLI workflows, keep the module folder in the repository and use the normal BMad install flow so the skills are discoverable in the workspace.
