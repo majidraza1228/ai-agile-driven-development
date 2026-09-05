@@ -4,7 +4,9 @@ description: Install, verify, update, and reconfigure BMad in your project
 ---
 
 Use `npx bmad-method install` to install BMad in a project, connect it to your
-AI coding tool, and update it later.
+AI coding tool, and update it later. If you are setting up Copilot, follow
+[Install BMad for Copilot](./copilot-bmad-setup.md) and the
+[BMad Quick Start for Copilot](./copilot-bmad-quick-start.md).
 
 ## When to Use This
 
