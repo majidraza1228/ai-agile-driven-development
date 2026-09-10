@@ -5,7 +5,7 @@ sidebar:
   order: 1
 ---
 
-Use this page to find out what skills and agents a BMad install gives you and how to start each one. How a skill is used in practice lives on its chapter page, linked from the tables below.
+Use this page to find out what skills and agents a BMad install gives you and how to start each one. How a skill is used in practice lives on its chapter page, linked from the tables below. If you are using Copilot, start with [Install BMad for Copilot](../start/copilot-bmad-setup.md) and then open the [BMad Quick Start for Copilot](../start/copilot-bmad-quick-start.md).
 
 ## What a Skill Is
 

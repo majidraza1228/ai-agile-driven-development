@@ -1,0 +1,13 @@
+code: cmt
+name: Custom Module Template
+description: Template for building a reusable BMad module. Use when creating a new module that bundles planning, implementation, and utility skills.
+default_selected: false
+
+directories:
+  - planning
+  - implementation
+  - utility
+
+post-install-notes: |
+  This module is a starter template.
+  Copy it to a new module directory, rename the skills, and replace the example content with your own workflows.

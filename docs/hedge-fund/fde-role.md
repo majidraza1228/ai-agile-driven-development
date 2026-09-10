@@ -34,6 +34,13 @@ The FDE solves this by being the person who:
 | Risk and compliance gates | Prepares artifacts, schedules reviews, resolves findings |
 | Retrospective | Facilitates desk sign-off — the FDE does not declare success alone |
 
+## Fintech Operating Rules
+
+- Use the investment thesis as the source of truth for downstream work.
+- Keep the risk officer involved before architecture is finalized.
+- Treat compliance as a release gate, not a final checkbox.
+- Update the PRD first when scope changes, then regenerate specs.
+
 ## How the FDE Uses BMad
 
 The FDE uses the full BMad delivery loop but enters it at the right point for the work:

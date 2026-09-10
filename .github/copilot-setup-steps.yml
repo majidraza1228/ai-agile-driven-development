@@ -1,0 +1,16 @@
+name: BMad Copilot Setup
+description: Prepare a Copilot workspace so BMad skills are available with one command.
+steps:
+  - name: Check prerequisites
+    run: |
+      node --version
+      python3 --version
+      uv --version
+  - name: Install dependencies
+    run: npm ci
+  - name: Install BMad
+    run: npx bmad-method install
+  - name: Verify skills are available
+    run: |
+      test -d .claude/skills || test -d .agents/skills || test -d .cline/skills
+      npm run validate:skills

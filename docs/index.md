@@ -23,6 +23,10 @@ You can use either group on its own. Many people run the thinking skills and
 never ask BMad to write a line of code, and a small fix can go straight to
 building with no planning at all.
 
+If you are setting BMad up for Copilot, start with
+[Install BMad for Copilot](./start/copilot-bmad-setup.md) and then use the
+[BMad Quick Start for Copilot](./start/copilot-bmad-quick-start.md).
+
 ## Find Your Starting Point
 
 **You are not sure how much process the change needs.**
